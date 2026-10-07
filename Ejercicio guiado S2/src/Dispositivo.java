@@ -12,25 +12,24 @@ public class Dispositivo {
 
     }
     public void setNombre(String nombre){
+        if(nombre==null)
+            System.out.println("El nombre no puede estar vacio");
         this.nombre=nombre;
+    }
+    public String getNombre() {
+        return nombre;
     }
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-
-    public void setActivo(boolean activo) {
-        this.activo = activo;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
     public String getTipo() {
         return tipo;
     }
 
+    public void setActivo(boolean activo) {
+        this.activo = activo;
+    }
     public boolean isActivo() {
         return activo;
     }
